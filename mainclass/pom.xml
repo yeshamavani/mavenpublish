@@ -12,6 +12,13 @@
     <artifactId>mainclass</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <artifactId>sharedlibrary</artifactId>
+            <groupId>com.github.yeshamavani</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
