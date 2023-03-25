@@ -6,12 +6,20 @@
     <parent>
         <groupId>io.github.yeshamavani</groupId>
         <artifactId>mavenpublish</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>mainclass</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <artifactId>sharedlibrary</artifactId>
+            <groupId>io.github.yeshamavani</groupId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 
 
     <name>maven publish main project by yesha</name>
@@ -71,7 +79,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 
@@ -103,14 +110,6 @@
         <developerConnection>scm:git:ssh://github.com:yeshamavani/mavenpublish.git</developerConnection>
         <url>http://github.com/yeshamavani/mavenpublish/tree/master</url>
     </scm>
-
-    <dependencies>
-        <dependency>
-            <artifactId>sharedlibrary</artifactId>
-            <groupId>io.github.yeshamavani</groupId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
