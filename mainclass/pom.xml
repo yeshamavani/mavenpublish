@@ -4,18 +4,18 @@
     <parent>
         <groupId>io.github.yeshamavani</groupId>
         <artifactId>mavenpublish</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>0.1</version>
     </parent>
 
     <artifactId>mainclass</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>io.github.yeshamavani</groupId>
             <artifactId>sharedlibrary</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>0.1</version>
         </dependency>
     </dependencies>
 
@@ -110,7 +110,7 @@
         <connection>scm:git:git://github.com/yeshamavani/mavenpublish.git</connection>
         <developerConnection>scm:git:ssh://github.com:yeshamavani/mavenpublish.git</developerConnection>
         <url>http://github.com/yeshamavani/mavenpublish/tree/master</url>
-      <tag>v1.0.0</tag>
+      <tag>v0.1</tag>
   </scm>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
