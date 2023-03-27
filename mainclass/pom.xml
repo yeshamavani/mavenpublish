@@ -107,11 +107,11 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/yeshamavani/mavenpublish.git</connection>
-        <developerConnection>scm:git:ssh://github.com:yeshamavani/mavenpublish.git</developerConnection>
-        <url>http://github.com/yeshamavani/mavenpublish/tree/master</url>
-      <tag>v0.1</tag>
-  </scm>
+        <connection>scm:git:https://github.com/yeshamavani/mavenpublish.git</connection>
+        <developerConnection>scm:git:https://github.com/yeshamavani/mavenpublish.git</developerConnection>
+        <url>http://github.com/yeshamavani/mavenpublish</url>
+        <tag>HEAD</tag>
+    </scm>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
