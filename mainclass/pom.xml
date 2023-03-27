@@ -4,18 +4,18 @@
     <parent>
         <groupId>io.github.yeshamavani</groupId>
         <artifactId>mavenpublish</artifactId>
-        <version>0.1</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>mainclass</artifactId>
-    <version>0.1</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>io.github.yeshamavani</groupId>
             <artifactId>sharedlibrary</artifactId>
-            <version>0.1</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
