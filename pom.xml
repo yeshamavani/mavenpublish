@@ -35,11 +35,10 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/yeshamavani/mavenpublish.git</connection>
-        <developerConnection>scm:git:https://github.com/yeshamavani/mavenpublish.git</developerConnection>
+        <connection>scm:git:git://github.com/yeshamavani/mavenpublish.git</connection>
+        <developerConnection>scm:git:ssh://github.com:yeshamavani/mavenpublish.git</developerConnection>
         <url>http://github.com/yeshamavani/mavenpublish</url>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <modules>
         <module>sharedlibrary</module>
