@@ -117,6 +117,7 @@
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <releaseProfiles>releases</releaseProfiles>
+                    <pushChanges>false</pushChanges>
                 </configuration>
                 <dependencies>
                     <dependency>
