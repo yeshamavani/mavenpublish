@@ -1,0 +1,11 @@
+
+load("@vaticle_bazel_distribution//maven:rules.bzl", java_binary)
+
+java_binary(
+        name = "mavenpublish",
+        srcs = [],
+        deps = ["//sharedlibrary:sharedlibrary",
+                "//mainclass:mainclass"
+                ]
+        )
+

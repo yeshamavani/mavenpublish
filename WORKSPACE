@@ -24,7 +24,6 @@ http_archive(
     strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
     url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % RULES_JVM_EXTERNAL_TAG,
 )
-
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
@@ -37,4 +36,14 @@ maven_install(
         "http://uk.maven.org/maven2",
         "https://jcenter.bintray.com/",
     ],
+)
+
+load("@vaticle_bazel_distribution//maven:rules.bzl", "http_archive")
+http_archive(
+    name = "vaticle_bazel_distribution",
+    urls = [
+        "https://github.com/vaticle/bazel-distribution/archive/refs/tags/v0.13.0.tar.gz",
+    ],
+    sha256 = "f7e9f4e4e8a3c51f72a7d57c4b25f8b87a2c6e9b9ebc6106a8f6dd4320c90d98",
+    strip_prefix = "bazel-distribution-0.13.0",
 )

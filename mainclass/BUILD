@@ -3,9 +3,9 @@ package(default_visibility = ["//visibility:public"])
 load("@vaticle_bazel_distribution//maven:rules.bzl", "assemble_maven", "deploy_maven",java_library)
 
 java_library(
-name = "maven publish main project by yesha",
+name = "mainclass",
 srcs = glob(["src/main/java/com/github/yeshamavani/*.java"]),
-deps =
+deps = ["//sharedlibrary:sharedlibrary"]
 visibility = ["//visibility:public"],
 )
 
@@ -24,3 +24,11 @@ assemble_maven(
         scm_url = "https://github.com/yeshamavani/mavenpublish.git",
 
     )
+
+deploy_maven(
+    name = "deploy-maven",
+    release = "https://oss.sonatype.org/service/local/staging/deploy/maven2/",
+    snapshot = "https://oss.sonatype.org/content/repositories/snapshots",
+    tags = ["manual"],
+    target = ":assemble-maven",
+)
