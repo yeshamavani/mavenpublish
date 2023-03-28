@@ -117,6 +117,7 @@
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <releaseProfiles>releases</releaseProfiles>
+                    <password>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</password>
                 </configuration>
                 <dependencies>
                     <dependency>
