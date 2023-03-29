@@ -18,7 +18,7 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <name>maven publish shared project by yesha</name>
+    <name>msharedlibrary</name>
     <url>https://github.com/yeshamavani/mavenpublish</url>
     <description>A trial monorepo for publish</description>
 
