@@ -13,11 +13,20 @@ http_archive(
     url = "https://github.com/bazelbuild/bazel-skylib/releases/download/{}/bazel-skylib.{}.tar.gz".format(skylib_version, skylib_version),
 )
 
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("//dependencies:google_protobuf.bzl", "google_protobuf")
 
-RULES_JVM_EXTERNAL_TAG = "2.5"
+google_protobuf()
 
-RULES_JVM_EXTERNAL_SHA = "249e8129914be6d987ca57754516be35a14ea866c616041ff0cd32ea94d2f3a1"
+load("@mavenpublish//central-sync:dependencies.bzl", "rules_jvm_external", "vaticle_bazel_distribution")
+
+rules_jvm_external()
+
+vaticle_bazel_distribution()
+load("@vaticle_bazel_distribution//maven:deps.bzl", "maven_artifacts_with_versions")
+
+RULES_JVM_EXTERNAL_TAG = "3.1"
+
+RULES_JVM_EXTERNAL_SHA = "e246373de2353f3d34d35814947aa8b7d0dd1a58c2f7a6c41cfeaff3007c2d14"
 
 http_archive(
     name = "rules_jvm_external",
@@ -34,7 +43,8 @@ maven_install(
     ],
     fetch_sources = True,
     repositories = [
-        "http://uk.maven.org/maven2",
-        "https://jcenter.bintray.com/",
+        "https://repo.maven.apache.org/maven2/",
+        "https://mvnrepository.com/artifact",
+        "https://maven-central.storage.googleapis.com",
     ],
 )

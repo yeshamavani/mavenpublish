@@ -20,7 +20,7 @@
     </dependencies>
 
 
-    <name>maven publish main project by yesha</name>
+    <name>mainclass</name>
     <url>https://github.com/yeshamavani/mavenpublish</url>
     <description>A trial monorepo for publish</description>
 
